@@ -1,0 +1,27 @@
+{
+  "name": "virtualcloud-for-pio.profile",
+  "version": "0.1.0",
+  "main": "plugin.js",
+  "dependencies": {
+    "express": "^4.12.4",
+    "org.pinf.genesis.lib": "0.1.x",
+    "send": "^0.12.3"
+  },
+  "config": {
+    "virtualcloud-for-pio.profile/0": {
+      "port": 8080,
+      "bind": "127.0.0.1"
+    },
+    "pio.pinf.io/0": {
+      "runtime": "default-nodejs-server"
+    },
+    "org.pinf.genesis.lib/0": {
+      "api": {
+        "consumes": {
+          "config": "org.pinf.genesis.lib/0/config",
+          "PATH": "path"
+        }
+      }
+    }
+  }
+}
