@@ -1,0 +1,132 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -29px;
+  /* Pad bottom by footer height */
+  padding: 0 0 29px;
+}
+
+#wrap DIV.top-secret {
+  font-size: 24px;
+  text-align: center;
+  padding: 0px;
+}
+
+.navbar-brand {
+  margin-right: 50px;
+}
+
+#footer {
+  height: 29px;
+  background-color: #f5f5f5;
+  font-size: 11px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.page {
+  padding-top: 0px;
+}
+
+.page-login P.lead {
+  margin-bottom: 50px;
+}
+
+.page-login DIV.info A.btn-primary {
+  width: 180px;
+}
+
+.page-login DIV.info A.btn-default {
+  margin-left: 5px;
+}
+
+.page-login DIV.info-small DIV.form-group {
+  margin-bottom: 4px;
+}
+.page-login DIV.info-small LABEL {
+  font-size: 12px !important;
+}
+.page-login DIV.info-small INPUT {
+  font-size: 12px !important;
+  height: 24px;
+}
+
+.page-login DIV.info DIV.form-group > TABLE {
+  width: 100%;
+}
+
+.page-login DIV.info DIV.form-group > TABLE TD {
+  white-space: nowrap;
+}
+
+.page-login DIV.info DIV.form-group LABEL {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.page-login DIV.info DIV.form-group LABEL.todo {
+  color: #a94442;
+}
+.page-login DIV.info DIV.form-group LABEL.done {
+  color: #3c763d;
+}
+
+.page-login DIV.info DIV.form-group > TABLE TD:nth-child(2) {
+  width: 100%;
+  padding-left: 3px;
+  padding-right: 10px;
+}
+
+.page-login DIV.info DIV.alert {
+  display: inline-block;
+  margin: 0px;
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#footer > .container .text-muted {
+  margin-top: 7px;
+  margin-bottom: 0px;
+}
+
+code {
+  font-size: 80%;
+}
+
+
+SPAN.OS1 {
+  color: #009206;
+  font-size: 60%;
+}
+SPAN.OS2 {
+  color: #A76F1C;
+  font-size: 60%;
+}

@@ -1,2 +1,39 @@
 
-Hello World!
+{% include "_header.tpl" %}
+
+{% if authorized.github %}
+
+	<div class="ui green segment">
+
+        <div class="ui attached form">
+
+          <div class="field">
+            <label>Access Secret Hash</label>
+            <input value="{{vct.arrived.accessSecretHash}}" readonly="readonly" type="text">
+          </div>
+
+        </div>
+
+		<div class="ui center aligned basic segment">
+
+			<div link-to="/logout" class="ui primary button">
+			  Logout
+			</div>
+
+		</div>
+
+	</div>
+
+{% else %}
+
+	<div class="ui center aligned segment">
+
+		<div link-to="/login/github" class="ui primary button">
+		  Login to Github
+		</div>
+
+	</div>
+
+{% endif %}
+
+{% include "_footer.tpl" %}
