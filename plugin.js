@@ -8,7 +8,7 @@ exports.for = function (API) {
 
 		return resolver({}).then(function (resolvedConfig) {
 
-console.log("resolvedConfig", JSON.stringify(resolvedConfig, null, 4));
+console.log("VIRTUALCLOUD FOR PIO.PROFILE resolvedConfig", JSON.stringify(resolvedConfig, null, 4));
 
 			function login () {
 

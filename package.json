@@ -41,6 +41,9 @@
           "JWT": "jsonwebtoken",
           "FORGE": "node-forge",
           "REQUEST": "request"
+        },
+        "provides": {
+          "server": "./api/server.js"
         }
       }
     }
