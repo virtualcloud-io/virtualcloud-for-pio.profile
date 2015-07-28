@@ -1,32 +1,64 @@
 
+          </div>
+
         </div>
+
+
+
       </div>
 
-    </div>
+    {% if vct %}
 
+      <div class="five wide column">
 
-    {% if invite %}
+        <h2 class="ui header">Government</h2>
+        <p>This <b>Space</b> is <a href="https://en.wiktionary.org/wiki/govern">governed</a> with identical rights by:</p>
 
-      <div class="ui two column centered grid">
-        <div class="column">
+        <div class="ui celled list">
+          <div class="item">
+            <img class="ui avatar image" src="https://avatars3.githubusercontent.com/u/18679?v=3&s=140">
+            <div class="content">
+              <a class="header">Christoph Dorn <div class="ui tag label">Chief System Architect</div></a>
 
+              <div class="description">
+                <p>Availability: <b>Support &amp; Coaching</b></p>
+<!--                
+                <p>Last Access: <b>5 days ago</b>
+                  <button class="mini ui primary button">
+                    Contact
+                  </button>
+                </p>
+-->
+              </div>
+            </div>
+          </div>          
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        {% if invite %}
+<!--                
           <div class="ui icon message">
-            <i class="add user icon"></i>
+
+            <a class="ui right corner label">
+              <i class="add user icon"></i>
+            </a>
+
             <div class="content">
               <div class="header">
-                Invite someone to this VirtualCloud!
+                Invite someone to this Virtual Cloud Space!
               </div>
-              <p>Copy the url and code below and send them to another party using a different channel of communication for each.</p>
+              <p>Copy the <i>temporary invite token</i> and send it to the person you want to <b>invite with identical rights as everyone already present</b>. When they are prompted give them the <i>accompanying unlock code</i> using a different channel of communication (to minimize the risk of third party exposure).</p>
 
               <div class="ui attached form">
 
                 <div class="two fields">
-                  <div class="ten wide field">
-                    <label>Token</label>
+                  <div class="twelve wide field">
+                    <label>Invite Token</label>
                     <input value="{{invite.token}}" readonly="readonly" type="text">
                   </div>
-                  <div class="six wide field">
-                    <label>Code</label>
+                  <div class="four wide field">
+                    <label>Unlock Code</label>
                     <input value="{{invite.code}}" readonly="readonly" type="text">
                   </div>
                 </div>
@@ -35,38 +67,22 @@
 
 
             </div>
-          </div>
+          </div> 
+-->
+        {% endif %}
 
-        </div>
       </div>
-        
+
     {% endif %}
 
 
-
     <div class="ui hidden divider"></div>
-
-    <div class="ui basic center aligned segment">
-      <p>Open Source: <a href="https://github.com/virtualcloud-io/genesis.virtualcloud.io">github.com/virtualcloud-io/genesis.virtualcloud.io</a></p>
-    </div>
-
-
-
-<form action="/login" method="POST">
-    <input type="hidden" name="repository" value="REPOSITORY"/>
-    <input type="hidden" name="branch" value="BRANCH"/>
-    <input type="hidden" name="rootSecretHash" value="ROOT_SECRET_HASH"/>
-    <input type="hidden" name="publicKeyFingerprint" value="PUBLIC_KEY_FINGERPRINT"/>
-
-    <input type="submit" class="ui submit button">Submit</input>
-</form>
-
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/lib/semantic-ui-css/semantic.min.js"></script>
-    <script src="/main.js"></script>
+    <script src="lib/semantic-ui-css/semantic.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

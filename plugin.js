@@ -6,10 +6,15 @@ exports.for = function (API) {
 
 	exports.resolve = function (resolver, config, previousResolvedConfig) {
 
+console.log("VIRTUALCLOUD FOR PIO.PROFILE config", JSON.stringify(config, null, 4));
+
 		return resolver({}).then(function (resolvedConfig) {
+
 
 console.log("VIRTUALCLOUD FOR PIO.PROFILE resolvedConfig", JSON.stringify(resolvedConfig, null, 4));
 
+
+/*
 			function login () {
 
 				return API.Q.when(require("./api/vct-request").for({
@@ -73,6 +78,8 @@ resolvedConfig.t = Date.now();
 
 				return resolvedConfig;
 			});
+*/
+
 /*
 				requested = {
 					repository: req.body.repository,
@@ -82,7 +89,7 @@ resolvedConfig.t = Date.now();
 				};
 */
 
-
+			return resolvedConfig;
 		});
 	}
 

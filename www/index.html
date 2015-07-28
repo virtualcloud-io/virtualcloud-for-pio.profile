@@ -1,39 +1,45 @@
 
 {% include "_header.tpl" %}
 
-{% if authorized.github %}
+	<table class="ui celled striped table">
+	  <tbody>
+	    <tr>
+	      <td class="collapsing">
+	        Github
+	      </td>
+	      <td class="collapsing">
+	        <b>REQUIRED</b>
+	      </td>
+	      <td>
 
-	<div class="ui green segment">
+			{% if authorized.github %}
+	  			<div link-to="logout" class="ui green fluid button">
+				  Logout
+				</div>
+			{% else %}
+		      	<div link-to="login/github" class="ui red fluid button">
+				  Login
+				</div>
+			{% endif %}
 
-        <div class="ui attached form">
-
-          <div class="field">
-            <label>Access Secret Hash</label>
-            <input value="{{vct.arrived.accessSecretHash}}" readonly="readonly" type="text">
-          </div>
-
-        </div>
-
-		<div class="ui center aligned basic segment">
-
-			<div link-to="/logout" class="ui primary button">
-			  Logout
+		  </td>
+	    </tr>
+<!--	    
+	    <tr>
+	      <td class="collapsing">
+	        HipChat
+	      </td>
+	      <td class="collapsing">
+	        OPTIONAL
+	      </td>
+	      <td>
+	      	<div link-to="login/github" class="ui blue fluid button">
+			  Login
 			</div>
-
-		</div>
-
-	</div>
-
-{% else %}
-
-	<div class="ui center aligned segment">
-
-		<div link-to="/login/github" class="ui primary button">
-		  Login to Github
-		</div>
-
-	</div>
-
-{% endif %}
+		  </td>
+	    </tr>
+-->
+	  </tbody>
+	</table>
 
 {% include "_footer.tpl" %}

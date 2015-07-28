@@ -1,0 +1,42 @@
+
+
+BODY.site {
+	padding-top: 15px;
+}
+
+.left.-status-segment {
+	font-size: 0.6em !important;
+	padding: 5px !important;
+}
+
+.left.-status-segment > :nth-child(3) {
+	margin-top: 0px !important;
+}
+
+.left.-status-segment > P,
+.left.-status-segment > H5 {
+	margin-bottom: 5px !important;
+}
+
+.left.-status-segment > H5 {
+	font-size: 1.1em;
+}
+
+.left.-status-segment > H5 > SPAN.label {
+	font-size: 0.8em;
+}
+
+
+.nowrap {
+	white-space: nowrap !important;
+}
+
+.right.-status-segment {
+	font-size: 0.6em !important;
+	padding: 5px !important;
+}
+
+.-root-namespace-banner >:first-child {
+	margin-bottom: 15px !important;
+}
+

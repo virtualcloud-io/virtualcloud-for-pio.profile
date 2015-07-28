@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "main": "plugin.js",
   "dependencies": {
+    "URIjs": "^1.16.0",
     "aws-sdk": "^2.1.34",
     "body-parser": "^1.13.1",
+    "canonical-json": "0.0.4",
     "cookie-parser": "^1.3.5",
+    "deepmerge": "^0.2.10",
     "express": "^4.12.4",
     "express-session": "^1.11.3",
     "fs-extra": "^0.19.0",
+    "http-hash-router": "^1.1.0",
     "jsonwebtoken": "^5.0.2",
     "morgan": "^1.6.0",
     "node-forge": "^0.6.30",
@@ -18,9 +22,10 @@
     "passport-github": "^0.1.5",
     "q": "^1.4.1",
     "request": "^2.58.0",
-    "semantic-ui-css": "^1.12.3",
+    "semantic-ui-css": "^2.0.7",
     "send": "^0.12.3",
     "session-file-store": "0.0.13",
+    "socket.io": "^1.3.6",
     "uuid": "^2.0.1"
   },
   "config": {
@@ -35,15 +40,24 @@
       "api": {
         "consumes": {
           "config": "org.pinf.genesis.lib/0/config",
+          "ASSERT": "assert",
           "VCT_REQUEST": "./api/vct-request.js",
           "PATH": "path",
+          "CRYPTO": "crypto",
           "Q": "q",
+          "URL": "url",
+          "DEEPMERGE": "deepmerge",
+          "UUID": "uuid",
+          "URIJS": "URIjs",
           "JWT": "jsonwebtoken",
           "FORGE": "node-forge",
-          "REQUEST": "request"
+          "REQUEST": "request",
+          "HTTP_HASH_ROUTER": "http-hash-router",
+          "CANONICAL_JSON": "canonical-json"
         },
         "provides": {
-          "server": "./api/server.js"
+          "server": "./api/server.js",
+          "command-login": "./api/command-login.js"
         }
       }
     }
